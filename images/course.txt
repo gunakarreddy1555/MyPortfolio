@@ -1,0 +1,15 @@
+ <script>
+        function toggleOtherInput() {
+            let selectedOptions = document.getElementById("courses").selectedOptions;
+            let otherInput = document.getElementById("otherInput");
+            if (selectedOptions.length > 1) {
+                otherInput.style.display = 'block';
+            } else {
+                otherInput.style.display = 'none';
+            }
+        }
+    </script>
+<div id="otherInput" style="display:none;">
+            <label for="other" class="form-label">Other:</label>
+            <input type="text" id="other" name="other" th:field="other"/>
+        </div>

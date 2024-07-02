@@ -1,0 +1,84 @@
+<div class="container my-5">
+    <table class="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Course Name</th>
+      <th scope="col">Course Description</th>
+      <th scope="col">Duration</th>
+      <th scope="col">Course Fee</th>
+      <th scope="col">Delete</th>
+      
+     
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="b:${student.course}">
+      <td th:text="${b.id}"></td>
+      <td th:text="${b.coursename}"></td>
+      <td th:text="${b.Description}"></td>
+      <td th:text="${b.duration}"></td>
+       <td th:text="${b.fee}"></td>
+       <td>
+       
+      <a th:href="@{/getStudentFordelete/{id}(id=${b.id})}"> <i class="fa-solid fa-trash ms-4"></i></a>
+       </td>
+    </tr>
+   
+  </tbody>
+</table>
+</div>
+ <a th:href="@{/getStudentToeditstudent/{id}(id=${b.id})}"> Add </i><a/>
+
+
+
+ <a th:href="@{/getstudentidandgivehisfeestructure/{id}(id=${b.id})}"> <i class="fa-solid fa-eye"></i><a/>
+
+<center><button  th:action="@{/naviagettoActualfeepage} class="btn btn-primary">Back</button></center>
+
+
+
+  <a th:href="@{/getStudentToeditstudent/{id}(id=${b.id})}"> <i class="fa-solid fa-pen-to-square"></i><a/>
+      <a th:href="@{/getStudentFordelete/{id}(id=${b.id})}"> <i class="fa-solid fa-trash ms-4"></i></a>
+<center><a th:href="@{/getStudentFordelete/{id}(id=${b.id})}"> Add Course</a></center>
+
+
+
+
+
+
+ <td th:text="${b.fee.totalamount}"></td>
+       <td th:text="${b.fee.paidtill}"></td>
+
+
+
+
+
+
+<center> <button class="btn btn-primary"><a th:href="@{/getStudentForPayfee}" > back</a></button></center>
+
+
+
+
+<center><button  class="btn btn-primary"><a th:href="@{/getStudentForPayfee}" style="color: white;">Back </a> </button></center>
+
+
+
+navigatetoadminhome
+
+navigatetoStudentHomeforadmin
+
+getpresentStudents                             getfacultyforeditcourse                     getAllStudenttoSeeHisHistory
+
+
+navigatetoFacultyHome
+
+
+
+
+ <center><button  class="btn btn-primary"><a th:href="@{/navigatetoStudentHomeforadmin}" style="color: white;">Back </a> </button></center>
+    
+<center><button  class="btn btn-primary"><a th:href="@{/navigatetoStudentHomeforadmin}" style="color: white;">Back </a> </button></center>
+
+
+

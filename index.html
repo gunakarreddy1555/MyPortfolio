@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guna portfolio web-site</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div id="header">
+  <div class="container">
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <p>UI/UX Designer</p>
+        <h1>Hi,I'm<span>GunaKar</span>  <br>from India</h1>
+    </div>
+  </div>
+</div>
+<!-- ----------about---------- -->
+<div id="about">
+<div class="container">
+   <div class="row">
+   <div class="about-col-1">
+     <img src="images/about2.jpg">
+   </div>
+   <div class="about-col-2">
+     <h1 class="sub-title">About Me</h1>
+     <p>Gunakar is a driven individual with a solid background in mechanical engineering, having successfully completed a Bachelor's degree in Mechanical Engineering.
+       His passion for technology and software development led him to pursue a Java Full Stack course, where he honed his skills in both frontend and backend development.
+       During his course, Gunakar showcased his abilities by completing a notable project titled "User and Library." This project demonstrated his proficiency in designing
+        and implementing solutions that integrate user interfaces with backend functionalities. His dedication and commitment to learning are evident in his ability to transition from a mechanical engineering background to a full-stack developer.
+      </p>
+      <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+      </div>
+      <div class="tab-contents active-tab" id="skills">
+        <ul>
+          <li><span>UI?UX</span><br>Design Web/App interface</li>
+          <li><span>Web Development</span><br> Web App Development</li>
+          <li><span>App Development</span><br>Building Android/IoS apps</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="experience">
+        <ul>
+          <li><span>2024</span><br>python</li>
+          <li><span>2023-2024</span><br> Spring Boot</li>
+          <li><span>2022-2023</span><br>trained java Full stack</li>
+        </ul>
+      </div>
+      <div class="tab-contents" id="education">
+        <ul>
+          <li><span>2022</span><br>BE Mechanical</li>
+          <li><span>2018</span><br> Inter</li>
+          <li><span>2016</span><br>10 TH</li>
+        </ul>
+      </div>
+   </div>
+   </div>
+     </div>
+</div> 
+<!-- -----------------services--------------- -->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fas fa-code"></i>
+        <h2>Web Design</h2>
+        <p> His passion for technology and software</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-crop-simple"></i>
+        <h2>User Library</h2>
+        <p>His passion for technology and software</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-brands fa-app-store-ios"></i>
+        <h2>workers platform</h2>
+        <p> His passion for technology and software</p>
+        <a href="#">Learn more</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ------------portfolio------------ -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="images/project1.webp">
+        <div class="layer">
+          <h3>User And Libarary App</h3>
+          <p>In the digital age, accessibility to knowledge should be unrestricted.
+             By providing a platform where users can freely access a diverse range of books 
+             after registering, we aim to democratize education and promote lifelong learning</p>
+             <a href="localhost:8080/login/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/lib3.jpg">
+        <div class="layer">
+          <h3>online platform for workers</h3>
+          <p>In the digital age, accessibility to knowledge should be unrestricted.
+             By providing a platform where users can freely access a diverse range of books 
+             after registering, we aim to democratize education and promote lifelong learning</p>
+             <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="images/lib6.jpg">
+        <div class="layer">
+          <h3>online shoping</h3>
+          <p>In the digital age, accessibility to knowledge should be unrestricted.
+             By providing a platform where users can freely access a diverse range of books 
+             after registering, we aim to democratize education and promote lifelong learning</p>
+             <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+<!-- -------------contact form------------- -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title"> Contact Me</h1>
+        <p><i class="fa-sharp fa-solid fa-paper-plane"></i>gunakarreddy15559@gmail.com</p>
+        <p><i class="fa-sharp fa-solid fa-square-phone"></i>7671870755</p>
+        <div class="social-icons">
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="images/Gunakar Reddy.docx" download class="btn btn2"> Download Cv</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="your Nmae" required>
+          <input type="email" name="Email" placeholder="your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2"> Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright @ Gunakar. <i class="fa-sharp fa-solid fa-heart"></i> from Manglampadu</p>
+  </div>
+</div>
+<script>
+  var tablinks=document.getElementsByClassName("tab-links");
+  var tabcontents=document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link")
+    document.getElementById(tabname).classList.add("active-tab")
+
+    
+  }
+  
+</script>
+<script>
+  var sidemeu = document.getElementById("sidemenu");
+  function openmenu(){
+    sidemeu.style.right = "0";
+  }
+  function closemenu(){
+    sidemeu.style.right = "-200px";
+  }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbz-kKVna-ZDfahRjAfh4X8PvpsuUmFqOxYJDU4NrxrA4CUjOnP4Cld4zuKbaqRBlwEE/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
